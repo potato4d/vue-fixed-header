@@ -106,6 +106,7 @@ html, body, #app {
   width: 100%;
   transition: background 0.15s ease-out;
   background: transparent;
+  z-index: 10000;
 }
 
 .navbar.is-primary {

@@ -1,4 +1,4 @@
-# vue-fixed-header
+# Vue Fixed Header
 
 [![NPM version](https://img.shields.io/npm/v/vue-fixed-header.svg?style=flat)](https://npmjs.com/package/vue-fixed-header) [![NPM downloads](https://img.shields.io/npm/dm/vue-fixed-header.svg?style=flat)](https://npmjs.com/package/vue-fixed-header) [![CircleCI](https://circleci.com/gh/potato4d/vue-fixed-header/tree/master.svg?style=shield)](https://circleci.com/gh/potato4d/vue-fixed-header/tree/master)
 

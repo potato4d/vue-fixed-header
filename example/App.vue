@@ -52,7 +52,7 @@
         <div class="content">
           <h2>LICENSE</h2>
           <p>
-            MIT
+            <a href="https://github.com/potato4d/vue-fixed-header/blob/master/LICENSE">MIT</a>
           </p>
         </div>
       </div>

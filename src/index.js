@@ -1,10 +1,12 @@
-const $ = (e) => document.querySelector(e)
-const tag = ( !window.chrome && 'WebkitAppearance' in document.documentElement.style ) ? 'body' : 'html'
+let $
+let tag
 
 export default {
   name: 'fixed-header',
 
   mounted () {
+    $ = (e) => document.querySelector(e)
+    tag = ( !window.chrome && 'WebkitAppearance' in document.documentElement.style ) ? 'body' : 'html'
     this.main()
   },
 

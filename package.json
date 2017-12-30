@@ -2,6 +2,7 @@
   "name": "vue-fixed-header",
   "version": "0.1.0",
   "description": "Simple and cross-browser friendly fixed header component for Vue.js.",
+  "license": "MIT",
   "repository": {
     "url": "potato4d/vue-fixed-header",
     "type": "git"

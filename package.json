@@ -32,18 +32,11 @@
       "cjs",
       "umd"
     ],
-    "filename": "vue-fixed-header[suffix].js",
-    "plugins": [
-      "vue"
-    ],
-    "vue": {
-      "css": "dist/vue-fixed-header.css"
-    }
+    "filename": "vue-fixed-header[suffix].js"
   },
   "devDependencies": {
     "bili": "^1.3.3",
     "bulma": "^0.6.1",
-    "poi": "^9.3.10",
-    "rollup-plugin-vue": "^2.5.2"
+    "poi": "^9.3.10"
   }
 }

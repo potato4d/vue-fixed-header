@@ -47,6 +47,41 @@
       </div>
     </section>
 
+
+    <section class="section">
+      <div class="container">
+        <div class="content">
+          <h2>Props</h2>
+          <table class="is-border">
+            <thead>
+              <tr>
+                <th>
+                  name
+                </th>
+                <th>
+                  type
+                </th>
+                <th>
+                  default
+                </th>
+                <th>
+                  description
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>threshold</th>
+                <td>Number</td>
+                <td><code>0</code></td>
+                <td>The threshold value for determining the scroll state.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
     <section class="section">
       <div class="container">
         <div class="content">

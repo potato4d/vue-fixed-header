@@ -4,6 +4,14 @@ let tag
 export default {
   name: 'fixed-header',
 
+  props: {
+    threshold: {
+      type: Number,
+      default: 0,
+      required: false
+    }
+  },
+
   mounted () {
     $ = (e) => document.querySelector(e)
     tag = ( !window.chrome && 'WebkitAppearance' in document.documentElement.style ) ? 'body' : 'html'
@@ -13,7 +21,7 @@ export default {
   methods: {
     main () {
       this.check = () => {
-        this.$emit('update:fixed', !!$(tag).scrollTop)
+        this.$emit('update:fixed', $(tag).scrollTop > this.threshold)
       }
       window.addEventListener('scroll', this.check)
     }

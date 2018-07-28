@@ -1,6 +1,12 @@
 let $
 let tag
 
+function getTargetTag() {
+  if (navigator.userAgent.includes('Edge')) return 'body'
+  if (!window.chrome && 'WebkitAppearance' in document.documentElement.style) return 'body'
+  return 'html'
+}
+
 export default {
   name: 'fixed-header',
 
@@ -14,7 +20,7 @@ export default {
 
   mounted () {
     $ = (e) => document.querySelector(e)
-    tag = ( !window.chrome && 'WebkitAppearance' in document.documentElement.style ) ? 'body' : 'html'
+    tag = getTargetTag()
     this.main()
   },
 

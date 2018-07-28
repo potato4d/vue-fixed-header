@@ -15,7 +15,7 @@
     "prepublishOnly": "npm test && npm run build",
     "test": "exit 0",
     "build": "bili",
-    "example": "poi",
+    "dev": "poi",
     "build:example": "poi build"
   },
   "author": {
@@ -25,7 +25,8 @@
   "poi": {
     "entry": "example/index.js",
     "dist": "example/dist",
-    "homepage": "./"
+    "homepage": "./",
+    "host": "0.0.0.0"
   },
   "bili": {
     "format": [

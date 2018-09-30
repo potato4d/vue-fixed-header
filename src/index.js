@@ -33,7 +33,7 @@ export default {
     }
   },
 
-  beforeDestory () {
+  beforeDestroy () {
     window.removeEventListener('scroll', this.check)
   },
 

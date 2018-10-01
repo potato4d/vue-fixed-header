@@ -1,0 +1,54 @@
+{
+  "projectName": "vue-fixed-header",
+  "projectOwner": "potato4d",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "potato4d",
+      "name": "HANATANI Takuma",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/6993514?v=4",
+      "profile": "https://potato4d.me",
+      "contributions": [
+        "code",
+        "bug",
+        "doc",
+        "example",
+        "question",
+        "review"
+      ]
+    },
+    {
+      "login": "egoist",
+      "name": "EGOIST",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/8784712?v=4",
+      "profile": "https://patreon.com/egoist",
+      "contributions": [
+        "tool"
+      ]
+    },
+    {
+      "login": "kavalcante",
+      "name": "Johnny Cavalcante",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/13931503?v=4",
+      "profile": "http://kavalcante.com",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "jamesgfc",
+      "name": "James Wright",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/3672769?v=4",
+      "profile": "http://www.jamesandrewwright.com",
+      "contributions": [
+        "bug"
+      ]
+    }
+  ]
+}

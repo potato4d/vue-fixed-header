@@ -36,6 +36,7 @@
     "name": "vue-fixed-header"
   },
   "devDependencies": {
+    "all-contributors-cli": "^5.4.0",
     "bili": "^1.3.3",
     "bulma": "^0.6.1",
     "poi": "^9.3.10",

@@ -3,6 +3,12 @@
   "version": "1.0.5",
   "description": "Simple and cross-browser friendly fixed header component for Vue.js.",
   "license": "MIT",
+  "keywords": [
+    "vue",
+    "vue-plugin",
+    "vue-component",
+    "typescript"
+  ],
   "repository": {
     "url": "potato4d/vue-fixed-header",
     "type": "git"

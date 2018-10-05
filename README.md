@@ -42,7 +42,7 @@ export default {
 
 ## Props
 
-### threshold: Number
+### threshold: number
 
 The threshold value for determining the scroll state.
 

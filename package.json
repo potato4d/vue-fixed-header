@@ -21,7 +21,8 @@
     "dev": "yarn serve",
     "serve": "parcel ./example/index.html",
     "build": "yarn clean;bili ./src/index.ts --format cjs --js typescript2",
-    "clean": "rm -rf {.rpt2_cache,dist}"
+    "clean": "rm -rf {.rpt2_cache,dist}",
+    "format": "prettier './{src,example}/**/*.{js,ts,vue}' --write"
   },
   "author": {
     "name": "potato4d",
@@ -38,13 +39,20 @@
     "bulma": "^0.6.1",
     "gh-pages": "^2.0.1",
     "parcel-bundler": "^1.10.1",
+    "prettier": "^1.14.3",
     "rollup-plugin-typescript2": "^0.17.1",
     "standard-version": "^4.4.0",
-    "typescript": "^3.1.1"
+    "typescript": "^3.1.1",
+    "vue-template-compiler": "^2.5.17"
   },
   "dependencies": {
     "vue": "^2.5.17",
     "vue-class-component": "^6.2.0",
+    "vue-hot-reload-api": "^2.3.1",
     "vue-property-decorator": "^7.2.0"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
   }
 }

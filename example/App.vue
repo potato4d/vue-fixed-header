@@ -25,9 +25,11 @@
     <section class="section">
       <div class="container">
         <div class="content">
-          <h2>About</h2>
+          <h2>
+            About
+          </h2>
           <p>
-            This is simple and cross-browser friendly fixed header component for Vue.js.<br>
+            This is simple and cross-browser friendly fixed header component for Vue.js written by TypeScript.<br>
             It provides a concise interface that can be manipulated by <code>:fixed.sync</code> directive.
           </p>
         </div>
@@ -37,7 +39,9 @@
     <section class="section">
       <div class="container">
         <div class="content">
-          <h2>Usage</h2>
+          <h2>
+            Usage
+          </h2>
           <pre><code>{{sampleCode}}</code></pre>
         </div>
       </div>
@@ -47,7 +51,9 @@
     <section class="section">
       <div class="container">
         <div class="content">
-          <h2>Props</h2>
+          <h2>
+            Props
+          </h2>
           <table class="is-border">
             <thead>
               <tr>
@@ -81,7 +87,9 @@
     <section class="section">
       <div class="container">
         <div class="content">
-          <h2>LICENSE</h2>
+          <h2>
+            LICENSE
+          </h2>
           <p>
             <a href="https://github.com/potato4d/vue-fixed-header/blob/master/LICENSE">MIT</a>
           </p>
@@ -103,14 +111,15 @@
 </template>
 
 <script lang="ts">
+import Vue, { VueConstructor } from 'vue'
 import 'bulma/css/bulma.css'
 import FixedHeader from '../src/'
 
-export default {
+export default Vue.extend({
   components: {
     FixedHeader
   },
-  data () {
+  data() {
     return {
       isFixed: false
     }
@@ -124,7 +133,7 @@ export default {
 </fixed-header>`
     }
   }
-}
+})
 </script>
 
 <style>
@@ -132,7 +141,9 @@ export default {
   box-sizing: border-box;
 }
 
-html, body, #app {
+html,
+body,
+#app {
   width: 100%;
   min-height: 110vh;
   margin: 0;
@@ -156,6 +167,36 @@ html, body, #app {
 }
 
 .hero.is-primary {
-  background: #41B883;
+  background: #41b883;
+}
+
+.github-corner,
+.github-corner svg {
+  z-index: 100000;
+}
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
 }
 </style>

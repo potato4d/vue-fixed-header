@@ -3,7 +3,11 @@ import { Component, Prop } from 'vue-property-decorator'
 
 function getTargetTag() {
   if (navigator.userAgent.includes('Edge')) return 'body'
-  if (!(window as any).chrome && 'WebkitAppearance' in (document.documentElement as any).style) return 'body'
+  if (
+    !(window as any).chrome &&
+    'WebkitAppearance' in (document.documentElement as any).style
+  )
+    return 'body'
   return 'html'
 }
 
@@ -12,15 +16,16 @@ export default class VueFixedHeader extends Vue {
   $: (selector: string) => any = () => null
   check: () => void = () => null
   tag: string | null = null
-  @Prop({ default: 0, type: Number}) threshold!: number
+  @Prop({ default: 0, type: Number })
+  threshold!: number
 
-  mounted () {
+  mounted() {
     this.$ = (e: string) => document.querySelector(e)
     this.tag = getTargetTag()
     this.main()
   }
 
-  main () {
+  main() {
     this.check = () => {
       const { $, tag, threshold } = this
       if (!tag) {
@@ -31,7 +36,7 @@ export default class VueFixedHeader extends Vue {
     window.addEventListener('scroll', this.check)
   }
 
-  beforeDestroy () {
+  beforeDestroy() {
     window.removeEventListener('scroll', this.check)
   }
 

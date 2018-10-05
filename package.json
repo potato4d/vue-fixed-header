@@ -22,7 +22,8 @@
     "serve": "parcel ./example/index.html -d docs",
     "build": "yarn clean;bili ./src/index.ts --format cjs --js typescript2",
     "clean": "rm -rf {.rpt2_cache,dist}",
-    "format": "prettier './{src,example}/**/*.{js,ts,vue}' --write"
+    "format": "prettier './{src,example}/**/*.{js,ts,vue}' --write",
+    "test": "jest"
   },
   "author": {
     "name": "potato4d",
@@ -32,16 +33,20 @@
     "name": "vue-fixed-header"
   },
   "devDependencies": {
+    "@types/jest": "^23.3.3",
     "@types/node": "^10.11.4",
     "@vue/component-compiler-utils": "^2.2.0",
+    "@vue/test-utils": "^1.0.0-beta.25",
     "all-contributors-cli": "^5.4.0",
     "bili": "^1.3.3",
     "bulma": "^0.6.1",
     "gh-pages": "^2.0.1",
+    "jest": "^23.6.0",
     "parcel-bundler": "^1.10.1",
     "prettier": "^1.14.3",
     "rollup-plugin-typescript2": "^0.17.1",
     "standard-version": "^4.4.0",
+    "ts-jest": "^23.10.3",
     "typescript": "^3.1.1",
     "vue-template-compiler": "^2.5.17"
   },

@@ -12,35 +12,33 @@
     "dist"
   ],
   "scripts": {
-    "prepublishOnly": "npm test && npm run build",
-    "test": "exit 0",
-    "build": "bili",
-    "dev": "poi",
-    "build:example": "poi build"
+    "dev": "yarn serve",
+    "serve": "parcel ./example/index.html",
+    "build": "yarn clean;bili ./src/index.ts --format cjs --js typescript2",
+    "clean": "rm -rf {.rpt2_cache,dist}"
   },
   "author": {
     "name": "potato4d",
     "email": "mail@potato4d.me"
   },
-  "poi": {
-    "entry": "example/index.js",
-    "dist": "docs",
-    "homepage": "./",
-    "host": "0.0.0.0"
-  },
   "bili": {
-    "format": [
-      "cjs",
-      "umd"
-    ],
     "name": "vue-fixed-header"
   },
   "devDependencies": {
+    "@types/node": "^10.11.4",
+    "@vue/component-compiler-utils": "^2.2.0",
     "all-contributors-cli": "^5.4.0",
     "bili": "^1.3.3",
     "bulma": "^0.6.1",
     "gh-pages": "^2.0.1",
-    "poi": "^9.3.10",
-    "standard-version": "^4.4.0"
+    "parcel-bundler": "^1.10.1",
+    "rollup-plugin-typescript2": "^0.17.1",
+    "standard-version": "^4.4.0",
+    "typescript": "^3.1.1"
+  },
+  "dependencies": {
+    "vue": "^2.5.17",
+    "vue-class-component": "^6.2.0",
+    "vue-property-decorator": "^7.2.0"
   }
 }

@@ -22,7 +22,8 @@
     "serve": "parcel ./example/index.html -d docs",
     "build": "yarn clean;bili ./src/index.ts --format cjs --js typescript2",
     "clean": "rm -rf {.rpt2_cache,dist}",
-    "format": "prettier './{src,example}/**/*.{js,ts,vue}' --write"
+    "format": "prettier './{src,example}/**/*.{js,ts,vue}' --write",
+    "gh-pages": "gh-pages -d docs -m '[ci-skip] deploy'"
   },
   "author": {
     "name": "potato4d",

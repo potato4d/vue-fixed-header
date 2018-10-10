@@ -23,7 +23,8 @@
       "dom"
     ],
     "types": [
-      "node"
+      "node",
+      "jest"
     ]
   },
   "bazelOptions": {

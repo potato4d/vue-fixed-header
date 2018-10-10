@@ -1,33 +1,21 @@
 {
   "compilerOptions": {
-    "declaration": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "module": "ES2015",
-    "moduleResolution": "node",
-    "noEmitOnError": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": true,
-    "noImplicitThis": true,
-    "noUnusedParameters": false,
-    "noUnusedLocals": false,
-    "skipDefaultLibCheck": true,
-    "skipLibCheck": true,
-    "inlineSourceMap": true,
-    "sourceRoot": ".",
-    "strictNullChecks": true,
-    "strict": true,
-    "target": "es5",
+    "target": "esnext",
     "lib": [
-      "es2017",
-      "dom"
+      "dom",
+      "esnext"
     ],
-    "types": [
-      "node",
-      "jest"
-    ]
+    "module": "es2015",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "jsx": "preserve",
+    "jsxFactory": "h"
   },
-  "bazelOptions": {
-    "suppressTsconfigOverrideWarnings": true
-  }
+  "include": [
+    "./**/*.ts"
+  ],
+  "compileOnSave": false
 }

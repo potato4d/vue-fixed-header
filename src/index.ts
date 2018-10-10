@@ -1,15 +1,4 @@
-import Vue from 'vue'
-import { Component, Prop } from 'vue-property-decorator'
-
-function getTargetTag() {
-  if (navigator.userAgent.includes('Edge')) return 'body'
-  if (
-    !(window as any).chrome &&
-    'WebkitAppearance' in (document.documentElement as any).style
-  )
-    return 'body'
-  return 'html'
-}
+import { Vue, Component, Prop } from 'vue-property-decorator'
 
 @Component
 export default class VueFixedHeader extends Vue {
@@ -21,8 +10,26 @@ export default class VueFixedHeader extends Vue {
 
   mounted() {
     this.$ = (e: string) => document.querySelector(e)
-    this.tag = getTargetTag()
+    this.tag = this.getTargetTag()
     this.main()
+  }
+
+  getTargetTag() {
+    if (navigator.userAgent.includes('Edge')) return 'body'
+    if (
+      !(window as any).chrome &&
+      'WebkitAppearance' in (document.documentElement as any).style
+    )
+      return 'body'
+    return 'html'
+  }
+
+  registerEvent() {
+    window.addEventListener('scroll', this.check)
+  }
+
+  removeEvent() {
+    window.removeEventListener('scroll', this.check)
   }
 
   main() {
@@ -33,11 +40,11 @@ export default class VueFixedHeader extends Vue {
       }
       this.$emit('update:fixed', $(tag).scrollTop > threshold)
     }
-    window.addEventListener('scroll', this.check)
+    this.registerEvent()
   }
 
   beforeDestroy() {
-    window.removeEventListener('scroll', this.check)
+    this.removeEvent()
   }
 
   render() {

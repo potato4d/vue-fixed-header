@@ -24,6 +24,7 @@
     "clean": "rm -rf {.rpt2_cache,dist}",
     "format": "prettier './{src,example}/**/*.{js,ts,vue}' --write",
     "test": "jest",
+    "test:watch": "jest --watch",
     "gh-pages": "gh-pages -d docs -m '[ci skip] deploy'"
   },
   "author": {
@@ -44,6 +45,7 @@
     "gh-pages": "^2.0.1",
     "jest": "^23.6.0",
     "jsdom": "^12.2.0",
+    "jsdom-global": "^3.0.2",
     "parcel-bundler": "^1.10.1",
     "prettier": "^1.14.3",
     "rollup-plugin-typescript2": "^0.17.1",

@@ -13,7 +13,7 @@
     "url": "potato4d/vue-fixed-header",
     "type": "git"
   },
-  "main": "dist/vue-fixed-header.cjs.js",
+  "main": "dist/vue-fixed-header.js",
   "files": [
     "dist"
   ],

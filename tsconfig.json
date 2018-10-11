@@ -12,6 +12,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "jsx": "preserve",
+    "declaration": true,
     "jsxFactory": "h"
   },
   "include": [

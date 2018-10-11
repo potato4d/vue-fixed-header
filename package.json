@@ -32,7 +32,7 @@
     "email": "mail@potato4d.me"
   },
   "bili": {
-    "name": "vue-fixed-header"
+    "filename": "vue-fixed-header.js"
   },
   "devDependencies": {
     "@types/jest": "^23.3.3",

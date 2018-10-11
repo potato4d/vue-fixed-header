@@ -3,3 +3,4 @@ dist
 docs
 .cache
 .rpt2_cache
+coverage

@@ -16,6 +16,9 @@ export default class VueFixedHeader extends Vue {
 
   getTargetTag() {
     if (navigator.userAgent.includes('Edge')) return 'body'
+    if (navigator.userAgent.includes('Firefox/') && ((+navigator.userAgent.split('Firefox/')[1]) >= 62)) {
+      return 'html'
+    }
     if (
       !(window as any).chrome &&
       'WebkitAppearance' in (document.documentElement as any).style

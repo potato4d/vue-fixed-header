@@ -21,4 +21,4 @@ jobs:
 
       - run: yarn build
       - run: yarn test:coverage
-      - run: codecov
+      - run: yarn codecov

@@ -25,6 +25,7 @@
     "format": "prettier './{src,example}/**/*.{js,ts,vue}' --write",
     "test": "jest",
     "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
     "gh-pages": "gh-pages -d docs -m '[ci skip] deploy'"
   },
   "author": {

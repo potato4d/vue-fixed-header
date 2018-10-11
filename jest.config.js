@@ -3,5 +3,8 @@ module.exports = {
   testEnvironment: 'node',
   transform: {
     '^.+\\.tsx?$': 'ts-jest'
-  }
+  },
+  collectCoverageFrom: [
+    'src/**/*.ts'
+  ]
 }

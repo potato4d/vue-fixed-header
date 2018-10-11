@@ -1,5 +1,6 @@
 # Vue Fixed Header
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors) [![NPM version](https://img.shields.io/npm/v/vue-fixed-header.svg?style=flat)](https://npmjs.com/package/vue-fixed-header) [![NPM downloads](https://img.shields.io/npm/dm/vue-fixed-header.svg?style=flat)](https://npmjs.com/package/vue-fixed-header) [![CircleCI](https://circleci.com/gh/potato4d/vue-fixed-header/tree/master.svg?style=shield)](https://circleci.com/gh/potato4d/vue-fixed-header/tree/master)
+
+[![codecov](https://codecov.io/gh/potato4d/vue-fixed-header/branch/master/graph/badge.svg)](https://codecov.io/gh/potato4d/vue-fixed-header) [![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors) [![NPM version](https://img.shields.io/npm/v/vue-fixed-header.svg?style=flat)](https://npmjs.com/package/vue-fixed-header) [![NPM downloads](https://img.shields.io/npm/dm/vue-fixed-header.svg?style=flat)](https://npmjs.com/package/vue-fixed-header) [![CircleCI](https://circleci.com/gh/potato4d/vue-fixed-header/tree/master.svg?style=shield)](https://circleci.com/gh/potato4d/vue-fixed-header/tree/master)
 
 Simple and cross-browser friendly fixed header component for Vue.js.
 

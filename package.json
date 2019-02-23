@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@types/jest": "23.3.5",
-    "@types/node": "10.11.7",
+    "@types/node": "10.12.27",
     "@vue/component-compiler-utils": "2.2.0",
     "@vue/test-utils": "1.0.0-beta.25",
     "all-contributors-cli": "5.4.0",

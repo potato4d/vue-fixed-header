@@ -36,7 +36,7 @@
     "filename": "vue-fixed-header.js"
   },
   "devDependencies": {
-    "@types/jest": "23.3.5",
+    "@types/jest": "23.3.14",
     "@types/node": "10.11.7",
     "@vue/component-compiler-utils": "2.2.0",
     "@vue/test-utils": "1.0.0-beta.25",

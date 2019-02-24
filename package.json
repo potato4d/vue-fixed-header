@@ -48,7 +48,7 @@
     "jest": "23.6.0",
     "jsdom": "12.2.0",
     "jsdom-global": "3.0.2",
-    "parcel-bundler": "1.10.2",
+    "parcel-bundler": "1.11.0",
     "prettier": "1.14.3",
     "rollup-plugin-typescript2": "0.17.1",
     "standard-version": "4.4.0",

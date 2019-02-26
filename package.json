@@ -36,12 +36,12 @@
     "filename": "vue-fixed-header.js"
   },
   "devDependencies": {
-    "@types/jest": "24.0.6",
+    "@types/jest": "24.0.9",
     "@types/node": "10.12.27",
     "@vue/component-compiler-utils": "2.6.0",
     "@vue/test-utils": "1.0.0-beta.29",
     "all-contributors-cli": "6.1.2",
-    "bili": "4.3.2",
+    "bili": "4.4.0",
     "bulma": "0.7.4",
     "codecov": "3.2.0",
     "gh-pages": "2.0.1",
@@ -50,7 +50,7 @@
     "jsdom-global": "3.0.2",
     "parcel-bundler": "1.11.0",
     "prettier": "1.16.4",
-    "rollup-plugin-typescript2": "0.19.2",
+    "rollup-plugin-typescript2": "0.19.3",
     "standard-version": "5.0.0",
     "ts-jest": "24.0.0",
     "typescript": "3.3.3333",
@@ -58,7 +58,7 @@
   },
   "dependencies": {
     "vue": "^2.5.17",
-    "vue-class-component": "^6.2.0",
+    "vue-class-component": "^7.0.0",
     "vue-hot-reload-api": "^2.3.1",
     "vue-property-decorator": "^7.2.0"
   },

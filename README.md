@@ -12,6 +12,10 @@ Simple and cross-browser friendly fixed header component for Vue.js.
 
 ![8d82f81b0f64d044ada918a7b9f3c574](https://user-images.githubusercontent.com/6993514/34456130-7981a894-edd2-11e7-8861-4745d85c8c96.gif)
 
+<a href="https://patreon.com/potato4d">
+  <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" height="50">
+</a>
+
 ## Install
 
 ```bash

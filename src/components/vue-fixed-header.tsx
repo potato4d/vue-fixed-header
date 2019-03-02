@@ -56,8 +56,6 @@ export default Vue.extend({
         }
         if (this.isFixed !== qs(tag).scrollTop > threshold) {
           this.isFixed = qs(tag).scrollTop > threshold
-          // console.log(this.$slots.default![0])
-          // this.$slots.default![0] = copy(this.$slots.default![0])
           this.$forceUpdate()
         }
       }
@@ -77,11 +75,11 @@ export default Vue.extend({
     }
 
     const _child = [...children][0] as VNode
-    const child = h(_child.tag, _child.data, _child.children || _child.text)
-
-    if (!child) {
+    if (!_child) {
       return h()
     }
+
+    const child = h(_child.tag, _child.data, _child.children || _child.text)
 
     child.data = child.data || { class: '' }
 

@@ -98,8 +98,11 @@ export default Vue.extend({
       }, {})
     }
 
-    child.data.class[this.headerClass] = true
-    child.data.class[this.fixedClass] = !!this.isFixed
+    child.data.class = {
+      ...child.data.class,
+      [this.headerClass]: true,
+      [this.fixedClass]: !!this.isFixed
+    }
 
     child.data.class = Object.entries(child.data.class).map(([k, v]) => {
       return v ? k : null

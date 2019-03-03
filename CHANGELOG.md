@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [3.1.0](https://github.com/potato4d/vue-fixed-header/compare/v3.0.0...v3.1.0) (2019-03-03)
+
+
+### Bug Fixes
+
+* Fix docs deploy script ([57f1af6](https://github.com/potato4d/vue-fixed-header/commit/57f1af6))
+
+
+### Features
+
+* change Fixed status event ([ccf1a98](https://github.com/potato4d/vue-fixed-header/commit/ccf1a98))
+
+
+
 # [3.0.0](https://github.com/potato4d/vue-fixed-header/compare/v2.0.2...v3.0.0) (2019-03-03)
 
 

@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [3.0.0](https://github.com/potato4d/vue-fixed-header/compare/v2.0.2...v3.0.0) (2019-03-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency vue-class-component to v7 ([#56](https://github.com/potato4d/vue-fixed-header/issues/56)) ([1c9d1c8](https://github.com/potato4d/vue-fixed-header/commit/1c9d1c8))
+* Fix bugs ([69a8323](https://github.com/potato4d/vue-fixed-header/commit/69a8323))
+
+
+### Features
+
+* Re-scratch vue-fixed-header ([a175d63](https://github.com/potato4d/vue-fixed-header/commit/a175d63))
+
+
+
 <a name="2.0.2"></a>
 ## [2.0.2](https://github.com/potato4d/vue-fixed-header/compare/v2.0.1...v2.0.2) (2018-10-11)
 

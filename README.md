@@ -10,7 +10,7 @@
 
 Simple and cross-browser friendly fixed header component for Vue.js.
 
-![8d82f81b0f64d044ada918a7b9f3c574](https://user-images.githubusercontent.com/6993514/34456130-7981a894-edd2-11e7-8861-4745d85c8c96.gif)
+[![Image from Gyazo](https://i.gyazo.com/2511ffaabd325f76c8fe9343ba07fdcc.gif)](https://gyazo.com/2511ffaabd325f76c8fe9343ba07fdcc)
 
 [![Edit vue-fixed-header demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/yvjoj937x1?fontsize=14)
 

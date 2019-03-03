@@ -1,7 +1,7 @@
 import { Vue, Component, Prop } from 'vue-property-decorator'
 
 @Component
-export default class VueFixedHeader extends Vue {
+export default class V2FixedHeader extends Vue {
   $: (selector: string) => any = () => null
   check: () => void = () => null
   tag: string | null = null
@@ -16,7 +16,10 @@ export default class VueFixedHeader extends Vue {
 
   getTargetTag() {
     if (navigator.userAgent.includes('Edge')) return 'body'
-    if (navigator.userAgent.includes('Firefox/') && ((+navigator.userAgent.split('Firefox/')[1]) >= 62)) {
+    if (
+      navigator.userAgent.includes('Firefox/') &&
+      +navigator.userAgent.split('Firefox/')[1] >= 62
+    ) {
       return 'html'
     }
     if (
@@ -52,6 +55,6 @@ export default class VueFixedHeader extends Vue {
 
   render() {
     const children = this.$slots.default
-    return children[0]
+    return children![0]
   }
 }

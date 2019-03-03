@@ -1,11 +1,8 @@
-// We need this in order to use window on our component
 require('jsdom-global')()
-// We don't need to render sub-components, so we use shallowMount
 import { shallowMount } from '@vue/test-utils'
-// The component that we will test 😁
-import VueFixedHeader from './'
+import VueFixedHeader from '../../src/components/vue-fixed-header'
 
-describe('VueFixedHeader component', () => {
+describe('src/components/vue-fixed-header', () => {
   test('renders properly with it slot', () => {
     const message = 'My awesome content!'
     const MyAwesomeContent = `<div>${message}</div>`

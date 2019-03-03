@@ -1,5 +1,7 @@
 # v2-fixed-header
 
+This is a document on vue-fixed-header in v2.x era.
+
 ## [data] fixed
 
 - type: Variable

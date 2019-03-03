@@ -2,9 +2,9 @@ import Vue, { CreateElement, VNode } from 'vue'
 import { getTargetTag } from '../utils/getTargetTag'
 
 type LocalData = {
-  qs: any,
-  check: any,
-  tag: any,
+  qs: any
+  check: any
+  tag: any
   isFixed: boolean
 }
 
@@ -18,7 +18,7 @@ export default Vue.extend({
     headerClass: {
       required: false,
       type: String,
-      default: 'vue-fixed-header',
+      default: 'vue-fixed-header'
     },
     fixedClass: {
       required: false,
@@ -104,9 +104,12 @@ export default Vue.extend({
       [this.fixedClass]: !!this.isFixed
     }
 
-    child.data.class = Object.entries(child.data.class).map(([k, v]) => {
-      return v ? k : null
-    }).filter((v) => v).join(' ')
+    child.data.class = Object.entries(child.data.class)
+      .map(([k, v]) => {
+        return v ? k : null
+      })
+      .filter(v => v)
+      .join(' ')
 
     return child
   }

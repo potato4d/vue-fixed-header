@@ -1,21 +1,16 @@
 module.exports = {
   title: 'vue-fixed-header',
-  description: 'Simple and cross-browser friendly fixed header component for Vue.js.',
+  description:
+    'Simple and cross-browser friendly fixed header component for Vue.js.',
   themeConfig: {
     nav: [
       { text: 'About', link: '/about/' },
       { text: 'API', link: '/api/' },
-      { text: 'Example', link: '/example/' },
+      { text: 'Example', link: '/example/' }
     ],
     sidebar: {
-      '/about/': [
-        '/about/'
-      ],
-      '/api/': [
-        '/api/',
-        '/api/vue-fixed-header.md',
-        '/api/v2-fixed-header.md',
-      ]
+      '/about/': ['/about/'],
+      '/api/': ['/api/', '/api/vue-fixed-header.md', '/api/v2-fixed-header.md']
     },
     repo: 'potato4d/vue-fixed-header',
     repoLabel: 'GitHub',

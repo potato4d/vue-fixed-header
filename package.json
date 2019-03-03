@@ -56,7 +56,8 @@
   },
   "dependencies": {
     "lodash.clonedeep": "^4.5.0",
-    "vue": "^2.5.17"
+    "vue": "^2.5.17",
+    "vue-property-decorator": "^7.3.0"
   },
   "prettier": {
     "semi": false,

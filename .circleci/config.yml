@@ -1,9 +1,9 @@
 version: 2
 jobs:
   build:
+    working_directory: ~/app
     docker:
-      - image: circleci/node:8.15.1-browsers
-
+      - image: circleci/node:10.15.2
     steps:
       - checkout
 
@@ -12,7 +12,7 @@ jobs:
           - v1-dependencies-{{ checksum "package.json" }}
           - v1-dependencies-
 
-      - run: yarn install
+      - run: yarn
 
       - save_cache:
           paths:
@@ -22,3 +22,22 @@ jobs:
       - run: yarn build
       - run: yarn test:coverage
       - run: yarn codecov
+  deploy:
+    working_directory: ~/app
+    docker:
+      - image: circleci/node:10.15.2
+    steps:
+      - checkout
+      - run: cd docs;yarn;yarn build
+      - run: yarn
+      - run: git config --global user.email "<>"; git config --global user.name "CircleCI"; yarn gh-pages
+
+workflows:
+  version: 2
+  main:
+    jobs:
+      - build
+      - deploy:
+          filters:
+            branches:
+              only: feature/auto-deploy-gh-pages

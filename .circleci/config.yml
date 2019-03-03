@@ -30,7 +30,7 @@ jobs:
       - checkout
       - run: cd docs;yarn;yarn build
       - run: yarn
-      - run: yarn gh-pages
+      - run: git config --global user.email "<>"; git config --global user.name "CircleCI"; yarn gh-pages
 
 workflows:
   version: 2

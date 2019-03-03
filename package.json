@@ -20,7 +20,7 @@
   "scripts": {
     "dev": "yarn serve",
     "serve": "vue-cli-service serve ./src/example.ts",
-    "build": "vue-cli-service build --target lib src/components/vue-fixed-header.vue",
+    "build": "vue-cli-service build --target lib src/components/vue-fixed-header.ts",
     "format": "prettier './{src,example}/**/*.{js,ts,vue}' --write",
     "test": "jest",
     "test:watch": "jest --watch",

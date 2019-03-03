@@ -28,10 +28,7 @@ jobs:
       - image: circleci/node:10.15.2
     steps:
       - checkout
-      - run: cd docs
-      - run: yarn
-      - run: yarn build
-      - run: cd ../
+      - run: cd docs;yarn;yarn build
       - run: yarn
       - run: yarn gh-pages
 
@@ -41,8 +38,6 @@ workflows:
     jobs:
       - build
       - deploy:
-          requires:
-            - build
           filters:
             branches:
               only: feature/auto-deploy-gh-pages

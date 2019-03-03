@@ -27,13 +27,8 @@ export default Vue.extend({
     }
   },
 
-  data() {
-    return {
-      qs: null,
-      check: null,
-      tag: null,
-      isFixed: false
-    } as LocalData
+  data(): LocalData {
+    return { qs: null, check: null, tag: null, isFixed: false }
   },
 
   mounted() {
@@ -50,11 +45,8 @@ export default Vue.extend({
       this.qs = (e: string) => document.querySelector(e)
       this.tag = getTargetTag(navigator.userAgent)
       this.check = () => {
-        const { qs, tag, threshold } = this
-        if (!tag) {
-          return
-        }
-        if (this.isFixed !== qs(tag).scrollTop > threshold) {
+        const { tag, qs, threshold } = this
+        if (tag && this.isFixed !== qs(tag).scrollTop > threshold) {
           this.isFixed = qs(tag).scrollTop > threshold
           this.$forceUpdate()
         }
@@ -70,32 +62,24 @@ export default Vue.extend({
 
   render(h: CreateElement): VNode {
     const children = this.$slots.default
-    if (!children) {
+    if (!children || !([...children][0] as VNode)) {
       return h()
     }
 
     const _child = [...children][0] as VNode
-    if (!_child) {
-      return h()
-    }
-
     const child = h(_child.tag, _child.data, _child.children || _child.text)
 
     child.data = child.data || { class: '' }
 
-    // string to string[]
     if (typeof child.data.class === 'string') {
       child.data.class = child.data.class.split(' ')
     }
 
-    // string[] to { K: V }
     if (Array.isArray(child.data.class)) {
-      child.data.class = [...child.data.class].reduce((a, b) => {
-        return {
-          ...a,
-          [b]: true
-        }
-      }, {})
+      child.data.class = [...child.data.class].reduce(
+        (a, b) => ({ ...a, [b]: true }),
+        {}
+      )
     }
 
     child.data.class = {
@@ -105,9 +89,7 @@ export default Vue.extend({
     }
 
     child.data.class = Object.entries(child.data.class)
-      .map(([k, v]) => {
-        return v ? k : null
-      })
+      .map(([k, v]) => (v ? k : null))
       .filter(v => v)
       .join(' ')
 

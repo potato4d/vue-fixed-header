@@ -2,12 +2,15 @@
 
 This is a document on vue-fixed-header in v2.x era.
 
-## [data] fixed
+## Install
 
-- type: Variable
-- required: true
+```bash
+yarn add vue-fixed-header
+```
 
-```html
+## Usage
+
+```vue
 <template>
   <fixed-header :fixed.sync="isFixed">
     <div :class="{ 'is-fixed': isFixed }">
@@ -32,15 +35,13 @@ export default {
 </script>
 ```
 
-## [props] threshold
+## Props
 
-- type: Number
-- required: false
-- default: 0
+### threshold: number
 
 The threshold value for determining the scroll state.
 
-```html
+```vue
 <template>
   <fixed-header :fixed.sync="isFixed" :threshold="100">
     <div :class="{ 'is-fixed': isFixed }">

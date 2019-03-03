@@ -7,7 +7,7 @@
     >
       <nav>
         <el-menu>
-          <el-menu-item style="pointer-events: none;" index="1">
+          <el-menu-item class="menu-brand" index="1">
             Fixed Header
           </el-menu-item>
         </el-menu>
@@ -29,28 +29,34 @@
             <el-input type="text" v-model="formData.fixedClass"></el-input>
           </el-form-item>
           <el-form-item>
-            <el-button type="primary" @click="handleClickUpdate"
-              >Update</el-button
-            >
-            <el-button type="secondary" @click="handleClickCancel"
-              >Cancel</el-button
-            >
+            <div class="justify-right">
+              <el-button type="primary" @click="handleClickUpdate">
+                Update
+              </el-button>
+              <el-button type="secondary" @click="handleClickCancel">
+                Cancel
+              </el-button>
+            </div>
           </el-form-item>
         </el-form>
       </el-card>
     </div>
-    <VueFixedHeader headerClass="fixed-footer" fixedClass="isFixed">
+    <VueFixedHeader
+      :threshold="0"
+      headerClass="fixed-footer"
+      fixedClass="isFixed"
+    >
       <footer>
-        <el-menu style="background: #282C34;">
-          <div style="flex: 1;"></div>
+        <el-menu class="footer-content">
+          <div class="flex-1"></div>
           <el-menu-item class="fixed-footer__item" index="1">
-            <b>threshold: {{ propsData.threshold }}</b>
+            <b> threshold: {{ propsData.threshold }} </b>
           </el-menu-item>
           <el-menu-item class="fixed-footer__item" index="1">
-            <b>headerClass: {{ propsData.headerClass }}</b>
+            <b> headerClass: {{ propsData.headerClass }} </b>
           </el-menu-item>
           <el-menu-item class="fixed-footer__item" index="1">
-            <b>fixedClass: {{ propsData.fixedClass }}</b>
+            <b> fixedClass: {{ propsData.fixedClass }} </b>
           </el-menu-item>
         </el-menu>
       </footer>
@@ -62,23 +68,21 @@
 import Vue from 'vue'
 import VueFixedHeader from './vue-fixed-header'
 
+const createData = () => ({
+  threshold: 74,
+  headerClass: 'vue-fixed-header',
+  fixedClass: 'vue-fixed-header--isFixed'
+})
+
 export default Vue.extend({
-  data() {
-    return {
-      propsData: {
-        threshold: 74,
-        headerClass: 'vue-fixed-header',
-        fixedClass: 'vue-fixed-header--isFixed'
-      },
-      formData: {
-        threshold: 74,
-        headerClass: 'vue-fixed-header',
-        fixedClass: 'vue-fixed-header--isFixed'
-      }
-    }
-  },
   components: {
     VueFixedHeader
+  },
+  data() {
+    return {
+      propsData: { ...createData() },
+      formData: { ...createData() }
+    }
   },
   methods: {
     handleClickUpdate() {
@@ -103,8 +107,18 @@ body,
   overflow-x: hidden;
 }
 
-* {
+.flex-1 {
+  flex: 1;
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+.menu-brand {
+  pointer-events: none !important;
 }
 
 #app {
@@ -176,5 +190,14 @@ li {
 .fixed-footer__item {
   color: #e5e5e5 !important;
   pointer-events: none;
+}
+
+.footer-content {
+  background: #282c34 !important;
+}
+
+.justify-right {
+  display: flex;
+  justify-content: flex-end;
 }
 </style>

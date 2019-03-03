@@ -11,12 +11,14 @@
 
 <script>
 import TheHeroArea from './parts/TheHeroArea.vue'
+import TheFooter from './parts/TheFooter.vue'
 import TheCodeSandbox from './parts/TheCodeSandbox.vue'
 
 export default {
   components: {
     TheHeroArea,
-    TheCodeSandbox
+    TheCodeSandbox,
+    TheFooter
   }
 }
 </script>

@@ -6,7 +6,7 @@ export function getTargetTag(userAgent: string): 'html' | 'body' {
     return 'html'
   }
   if (userAgent.includes('Chrome') && !userAgent.includes('opr')) {
-    return 'body'
+    return 'html'
   }
   return 'html'
 }

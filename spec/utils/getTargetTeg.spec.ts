@@ -17,12 +17,12 @@ describe('src/utils/getTargetTag', () => {
     })
 
     describe('when given Chrome UserAgent', () => {
-      it('returns "body"', () => {
+      it('returns "html"', () => {
         const userAgent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36'
         const documentElement = {
           style: ['WebkitAppearance']
         }
-        expect(getTargetTag(userAgent)).toBe('body')
+        expect(getTargetTag(userAgent)).toBe('html')
       })
     })
   })

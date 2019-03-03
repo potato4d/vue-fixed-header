@@ -54,10 +54,13 @@ export default Vue.extend({
         if (!tag) {
           return
         }
-        if (this.isFixed !== qs(tag).scrollTop > threshold) {
+        console.log(
+          tag
+        )
+        // if (this.isFixed !== qs(tag).scrollTop > threshold) {
           this.isFixed = qs(tag).scrollTop > threshold
           this.$forceUpdate()
-        }
+        // }
       }
     },
     registerEvent() {

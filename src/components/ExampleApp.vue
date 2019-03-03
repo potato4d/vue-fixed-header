@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <VueFixedHeader
+      @change="updateFixedStatus"
       :threshold="propsData.threshold"
       :headerClass="propsData.headerClass"
       :fixedClass="propsData.fixedClass"
@@ -50,6 +51,9 @@
         <el-menu class="footer-content">
           <div class="flex-1"></div>
           <el-menu-item class="fixed-footer__item" index="1">
+            <b> isFixed: {{ fixedStatus.headerIsFixed }} </b>
+          </el-menu-item>
+          <el-menu-item class="fixed-footer__item" index="1">
             <b> threshold: {{ propsData.threshold }} </b>
           </el-menu-item>
           <el-menu-item class="fixed-footer__item" index="1">
@@ -80,11 +84,17 @@ export default Vue.extend({
   },
   data() {
     return {
+      fixedStatus: {
+        headerIsFixed: false
+      },
       propsData: { ...createData() },
       formData: { ...createData() }
     }
   },
   methods: {
+    updateFixedStatus(next: boolean) {
+      this.fixedStatus.headerIsFixed = next
+    },
     handleClickUpdate() {
       this.propsData = { ...this.formData }
     },

@@ -48,6 +48,7 @@ export default Vue.extend({
         const { tag, qs, threshold } = this
         if (tag && this.isFixed !== qs(tag).scrollTop > threshold) {
           this.isFixed = qs(tag).scrollTop > threshold
+          this.$emit('change', this.isFixed)
           this.$forceUpdate()
         }
       }

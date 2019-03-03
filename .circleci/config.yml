@@ -40,4 +40,4 @@ workflows:
       - deploy:
           filters:
             branches:
-              only: feature/auto-deploy-gh-pages
+              only: master

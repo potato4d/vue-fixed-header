@@ -6,8 +6,7 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: 'About', link: '/about/' },
-      { text: 'API', link: '/api/' },
-      { text: 'Example', link: '/example/' }
+      { text: 'API', link: '/api/vue-fixed-header.md' },
     ],
     sidebar: {
       '/about/': ['/about/'],

@@ -1,13 +1,59 @@
 <template>
   <div id="app">
-    <VueFixedHeader :threshold="100" fixedClass="fixed">
+    <VueFixedHeader
+      :threshold="propsData.threshold"
+      :headerClass="propsData.headerClass"
+      :fixedClass="propsData.fixedClass"
+    >
       <nav>
-        <ul>
-          <li>
-            Header Item
-          </li>
-        </ul>
+        <el-menu>
+          <el-menu-item style="pointer-events: none;" index="1">
+            Fixed Header
+          </el-menu-item>
+        </el-menu>
       </nav>
+    </VueFixedHeader>
+    <div class="container">
+      <el-card>
+        <h3 class="heading">
+          vue-fixed-header debugging
+        </h3>
+        <el-form label-width="120px">
+          <el-form-item label="threshold">
+            <el-input type="number" v-model="formData.threshold"></el-input>
+          </el-form-item>
+          <el-form-item label="headerClass">
+            <el-input type="text" v-model="formData.headerClass"></el-input>
+          </el-form-item>
+          <el-form-item label="fixedClass">
+            <el-input type="text" v-model="formData.fixedClass"></el-input>
+          </el-form-item>
+          <el-form-item>
+            <el-button type="primary" @click="handleClickUpdate"
+              >Update</el-button
+            >
+            <el-button type="secondary" @click="handleClickCancel"
+              >Cancel</el-button
+            >
+          </el-form-item>
+        </el-form>
+      </el-card>
+    </div>
+    <VueFixedHeader headerClass="fixed-footer" fixedClass="isFixed">
+      <footer>
+        <el-menu style="background: #282C34;">
+          <div style="flex: 1;"></div>
+          <el-menu-item class="fixed-footer__item" index="1">
+            <b>threshold: {{ propsData.threshold }}</b>
+          </el-menu-item>
+          <el-menu-item class="fixed-footer__item" index="1">
+            <b>headerClass: {{ propsData.headerClass }}</b>
+          </el-menu-item>
+          <el-menu-item class="fixed-footer__item" index="1">
+            <b>fixedClass: {{ propsData.fixedClass }}</b>
+          </el-menu-item>
+        </el-menu>
+      </footer>
     </VueFixedHeader>
   </div>
 </template>
@@ -19,11 +65,28 @@ import VueFixedHeader from './vue-fixed-header'
 export default Vue.extend({
   data() {
     return {
-      aaa: false
+      propsData: {
+        threshold: 74,
+        headerClass: 'vue-fixed-header',
+        fixedClass: 'vue-fixed-header--isFixed'
+      },
+      formData: {
+        threshold: 74,
+        headerClass: 'vue-fixed-header',
+        fixedClass: 'vue-fixed-header--isFixed'
+      }
     }
   },
   components: {
     VueFixedHeader
+  },
+  methods: {
+    handleClickUpdate() {
+      this.propsData = { ...this.formData }
+    },
+    handleClickCancel() {
+      this.formData = { ...this.propsData }
+    }
   }
 })
 </script>
@@ -40,6 +103,23 @@ body,
   overflow-x: hidden;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
 nav {
   display: flex;
   width: 100vw;
@@ -49,10 +129,29 @@ nav {
   border-bottom: solid 1px #e5e5e5;
 }
 
-nav.fixed {
+nav.vue-fixed-header--isFixed {
   position: fixed;
   left: 0;
   top: 0;
+  z-index: 1000;
+  opacity: 0;
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-74px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.heading {
+  margin-top: 0;
+  padding-top: 0;
 }
 
 ul {
@@ -65,5 +164,17 @@ ul {
 
 li {
   padding: 8px 16px;
+}
+
+.fixed-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.fixed-footer__item {
+  color: #e5e5e5 !important;
+  pointer-events: none;
 }
 </style>

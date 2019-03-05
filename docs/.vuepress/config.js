@@ -10,7 +10,7 @@ module.exports = {
     ],
     sidebar: {
       '/about/': ['/about/'],
-      '/api/': ['/api/', '/api/vue-fixed-header.md', '/api/v2-fixed-header.md']
+      '/api/': ['/api/', '/api/vue-fixed-header.md']
     },
     repo: 'potato4d/vue-fixed-header',
     repoLabel: 'GitHub',

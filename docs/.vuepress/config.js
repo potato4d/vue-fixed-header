@@ -6,11 +6,11 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: 'About', link: '/about/' },
-      { text: 'API', link: '/api/vue-fixed-header.md' }
+      { text: 'API', link: '/api/' }
     ],
     sidebar: {
       '/about/': ['/about/'],
-      '/api/': ['/api/', '/api/vue-fixed-header.md']
+      '/api/': ['/api/', '/api/props.md', '/api/events.md']
     },
     repo: 'potato4d/vue-fixed-header',
     repoLabel: 'GitHub',

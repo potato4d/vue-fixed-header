@@ -3,16 +3,16 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![donate: Patreon](https://img.shields.io/badge/donate-patreon-orange.svg?style=flat-square)](https://www.patreon.com/potato4d)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-[![NPM version](https://img.shields.io/npm/v/vue-fixed-header.svg?style=flat)](https://npmjs.com/package/vue-fixed-header)
+[![NPM version](https://img.shields.io/npm/v/vue-fixed-header.svg?style=flat-square)](https://npmjs.com/package/vue-fixed-header)
 [![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors)
-[![NPM downloads](https://img.shields.io/npm/dm/vue-fixed-header.svg?style=flat)](https://npmjs.com/package/vue-fixed-header)
+[![NPM downloads](https://img.shields.io/npm/dm/vue-fixed-header.svg?style=flat-square)](https://npmjs.com/package/vue-fixed-header)
 [![codecov](https://codecov.io/gh/potato4d/vue-fixed-header/branch/master/graph/badge.svg)](https://codecov.io/gh/potato4d/vue-fixed-header)
 
 Simple and cross-browser friendly fixed header component for Vue.js.
 
 [![Image from Gyazo](https://i.gyazo.com/2511ffaabd325f76c8fe9343ba07fdcc.gif)](https://gyazo.com/2511ffaabd325f76c8fe9343ba07fdcc)
 
-[![Edit vue-fixed-header demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/yvjoj937x1?fontsize=14)
+[![Edit vue-fixed-header demo](https://codesandbox.io/static/img/play-codesandbox.svg?style=flat-square)](https://codesandbox.io/s/yvjoj937x1?fontsize=14)
 
 <a href="https://patreon.com/potato4d">
   <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" height="50">

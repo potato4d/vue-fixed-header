@@ -1,6 +1,7 @@
 module.exports = {
   title: 'vue-fixed-header',
-  base: '/vue-fixed-header/',
+  ga: 'UA-135633858-2',
+  // base: '/vue-fixed-header/',
   description:
     'Simple and cross-browser friendly fixed header component for Vue.js.',
   themeConfig: {

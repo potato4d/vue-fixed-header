@@ -46,7 +46,7 @@
     "all-contributors-cli": "6.2.0",
     "bulma": "0.7.4",
     "codecov": "3.2.0",
-    "element-ui": "2.6.1",
+    "element-ui": "2.6.2",
     "gh-pages": "2.0.1",
     "jest": "24.5.0",
     "jsdom": "14.0.0",

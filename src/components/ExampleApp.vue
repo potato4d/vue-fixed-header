@@ -5,6 +5,7 @@
       :threshold="propsData.threshold"
       :headerClass="propsData.headerClass"
       :fixedClass="propsData.fixedClass"
+      hideScrollUp
     >
       <nav>
         <el-menu>

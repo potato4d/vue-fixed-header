@@ -4,7 +4,13 @@ All notable changes to this project will be documented in this file. See [standa
 
 # [3.2.0](https://github.com/potato4d/vue-fixed-header/compare/v3.1.3...v3.2.0) (2019-04-04)
 
+### Features
 
+* Hide on scroll up ([84a81da](https://github.com/potato4d/vue-fixed-header/commit/84a81dabcad7b57bb225f00236cac7cd52e00deb))
+
+### Others
+
+* Update deps with renovate Bot
 
 ## [3.1.3](https://github.com/potato4d/vue-fixed-header/compare/v3.1.2...v3.1.3) (2019-03-05)
 

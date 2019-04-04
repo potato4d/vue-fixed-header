@@ -6,6 +6,7 @@ type LocalData = {
   check: any
   tag: any
   isFixed: boolean
+  lastScrollTop: Number
 }
 
 export default Vue.extend({
@@ -24,11 +25,16 @@ export default Vue.extend({
       required: false,
       type: String,
       default: 'vue-fixed-header--isFixed'
+    },
+    hideScrollUp: {
+      required: false,
+      type: Boolean,
+      default: false
     }
   },
 
   data(): LocalData {
-    return { qs: null, check: null, tag: null, isFixed: false }
+    return { qs: null, check: null, tag: null, isFixed: false, lastScrollTop: 0 }
   },
 
   mounted() {
@@ -46,10 +52,16 @@ export default Vue.extend({
       this.tag = getTargetTag(navigator.userAgent)
       this.check = () => {
         const { tag, qs, threshold } = this
-        if (tag && this.isFixed !== qs(tag).scrollTop > threshold) {
-          this.isFixed = qs(tag).scrollTop > threshold
+        const { offsetHeight } = this.$el as HTMLElement
+        if (tag) {
+          this.isFixed =
+            !this.hideScrollUp && this.isFixed
+              ? qs(tag).scrollTop > threshold
+              : window.pageYOffset > this.lastScrollTop &&
+                window.pageYOffset > offsetHeight
           this.$emit('change', this.isFixed)
           this.$forceUpdate()
+          this.lastScrollTop = window.pageYOffset
         }
       }
     },

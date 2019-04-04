@@ -5,6 +5,7 @@
       :threshold="propsData.threshold"
       :headerClass="propsData.headerClass"
       :fixedClass="propsData.fixedClass"
+      :hideScrollUp="propsData.hideScrollUp"
     >
       <nav>
         <el-menu>
@@ -14,7 +15,9 @@
         </el-menu>
       </nav>
     </VueFixedHeader>
-    <div class="container">
+    <div class="container" :class="{
+      headerIsFixed: fixedStatus.headerIsFixed
+    }">
       <el-card>
         <h3 class="heading">
           vue-fixed-header debugging
@@ -28,6 +31,11 @@
           </el-form-item>
           <el-form-item label="fixedClass">
             <el-input type="text" v-model="formData.fixedClass"></el-input>
+          </el-form-item>
+          <el-form-item label="hideScrollUp">
+            <el-checkbox v-model="formData.hideScrollUp">
+              hideScrollUp
+            </el-checkbox>
           </el-form-item>
           <el-form-item>
             <div class="justify-right">
@@ -48,19 +56,26 @@
       fixedClass="isFixed"
     >
       <footer>
-        <el-menu class="footer-content">
+        <el-menu class="footer-content" style="align-items: center;">
           <div class="flex-1"></div>
           <el-menu-item class="fixed-footer__item" index="1">
             <b> isFixed: {{ fixedStatus.headerIsFixed }} </b>
           </el-menu-item>
+          <span style="color: #ffffff50">/</span>
           <el-menu-item class="fixed-footer__item" index="1">
             <b> threshold: {{ propsData.threshold }} </b>
           </el-menu-item>
+          <span style="color: #ffffff50">/</span>
           <el-menu-item class="fixed-footer__item" index="1">
             <b> headerClass: {{ propsData.headerClass }} </b>
           </el-menu-item>
+          <span style="color: #ffffff50">/</span>
           <el-menu-item class="fixed-footer__item" index="1">
             <b> fixedClass: {{ propsData.fixedClass }} </b>
+          </el-menu-item>
+          <span style="color: #ffffff50">/</span>
+          <el-menu-item class="fixed-footer__item" index="1">
+            <b> hideScrollUp: {{ propsData.hideScrollUp }} </b>
           </el-menu-item>
         </el-menu>
       </footer>
@@ -75,7 +90,8 @@ import VueFixedHeader from './vue-fixed-header'
 const createData = () => ({
   threshold: 74,
   headerClass: 'vue-fixed-header',
-  fixedClass: 'vue-fixed-header--isFixed'
+  fixedClass: 'vue-fixed-header--isFixed',
+  hideScrollUp: false
 })
 
 export default Vue.extend({
@@ -171,6 +187,10 @@ nav.vue-fixed-header--isFixed {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.container.headerIsFixed {
+  transform: translateY(56px) !important;
 }
 
 .heading {

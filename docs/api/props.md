@@ -107,3 +107,40 @@ export default Vue.extend({
 })
 </script>
 ```
+
+## hideScrollUp
+
+- type: Boolean
+- required: false
+- default: false
+
+A boolean state to toggle `hide on scroll up` feature.
+When scroll down, set `isFixed` to true.
+When scroll u, set `isFixed` to false.
+
+```html
+<template>
+  <div id="app">
+    <VueFixedHeader hideScrollUp>
+      <nav>
+        <ul>
+          <li>
+            Header Item
+          </li>
+        </ul>
+      </nav>
+    </VueFixedHeader>
+  </div>
+</template>
+
+<script>
+import Vue from 'vue'
+import VueFixedHeader from './vue-fixed-header'
+
+export default Vue.extend({
+  components: {
+    VueFixedHeader
+  }
+})
+</script>
+```

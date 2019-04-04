@@ -6,7 +6,7 @@ type LocalData = {
   check: any
   tag: any
   isFixed: boolean
-  lastScrollTop: Number,
+  lastScrollTop: Number
 }
 
 export default Vue.extend({
@@ -54,10 +54,14 @@ export default Vue.extend({
         const { tag, qs, threshold } = this
         const { offsetHeight } = this.$el as HTMLElement
         if (tag) {
-          this.isFixed = !this.hideScrollUp && this.isFixed ? (qs(tag).scrollTop > threshold) : (window.pageYOffset > this.lastScrollTop && window.pageYOffset > offsetHeight)
+          this.isFixed =
+            !this.hideScrollUp && this.isFixed
+              ? qs(tag).scrollTop > threshold
+              : window.pageYOffset > this.lastScrollTop &&
+                window.pageYOffset > offsetHeight
           this.$emit('change', this.isFixed)
           this.$forceUpdate()
-          this.lastScrollTop = window.pageYOffset;
+          this.lastScrollTop = window.pageYOffset
         }
       }
     },

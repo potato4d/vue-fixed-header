@@ -5,10 +5,7 @@ module.exports = {
   description:
     'Simple and cross-browser friendly fixed header component for Vue.js.',
   themeConfig: {
-    nav: [
-      { text: 'About', link: '/about/' },
-      { text: 'API', link: '/api/' }
-    ],
+    nav: [{ text: 'About', link: '/about/' }, { text: 'API', link: '/api/' }],
     sidebar: {
       '/about/': ['/about/'],
       '/api/': ['/api/', '/api/props.md', '/api/events.md']

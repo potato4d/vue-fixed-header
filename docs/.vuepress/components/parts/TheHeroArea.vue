@@ -14,18 +14,18 @@
         </p>
       </div>
       <div>
-        <TheHeroAds />
+        <TheHeroLinks />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import TheHeroAds from './TheHeroAds.vue'
+import TheHeroLinks from './TheHeroLinks.vue'
 
 export default {
   components: {
-    TheHeroAds
+    TheHeroLinks
   }
 }
 </script>

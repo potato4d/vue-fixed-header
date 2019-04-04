@@ -6,6 +6,7 @@
       <TheCodeSandbox />
       <Content />
     </div>
+    <TheFooter />
   </div>
 </template>
 

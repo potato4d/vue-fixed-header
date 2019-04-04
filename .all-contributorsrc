@@ -58,6 +58,16 @@
       "contributions": [
         "test"
       ]
+    },
+    {
+      "login": "derevandal",
+      "name": "André Van Dal",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/1340508?v=4",
+      "profile": "http://lenyeg.com.br",
+      "contributions": [
+        "code"
+      ]
     }
-  ]
+  ],
+  "contributorsPerLine": 7
 }

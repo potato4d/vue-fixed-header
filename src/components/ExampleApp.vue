@@ -61,19 +61,19 @@
           <el-menu-item class="fixed-footer__item" index="1">
             <b> isFixed: {{ fixedStatus.headerIsFixed }} </b>
           </el-menu-item>
-          <span style="color: #ffffff50">/</span>
+          <span class="separator">/</span>
           <el-menu-item class="fixed-footer__item" index="1">
             <b> threshold: {{ propsData.threshold }} </b>
           </el-menu-item>
-          <span style="color: #ffffff50">/</span>
+          <span class="separator">/</span>
           <el-menu-item class="fixed-footer__item" index="1">
             <b> headerClass: {{ propsData.headerClass }} </b>
           </el-menu-item>
-          <span style="color: #ffffff50">/</span>
+          <span class="separator">/</span>
           <el-menu-item class="fixed-footer__item" index="1">
             <b> fixedClass: {{ propsData.fixedClass }} </b>
           </el-menu-item>
-          <span style="color: #ffffff50">/</span>
+          <span class="separator">/</span>
           <el-menu-item class="fixed-footer__item" index="1">
             <b> hideScrollUp: {{ propsData.hideScrollUp }} </b>
           </el-menu-item>
@@ -229,5 +229,9 @@ li {
 .justify-right {
   display: flex;
   justify-content: flex-end;
+}
+
+.separator {
+  color: #ffffff50;
 }
 </style>

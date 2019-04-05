@@ -51,14 +51,16 @@ export default Vue.extend({
       this.qs = (e: string) => document.querySelector(e)
       this.tag = getTargetTag(navigator.userAgent)
       this.check = () => {
-        const { tag, qs, threshold } = this
+        const { tag, qs, threshold, hideScrollUp } = this
         const { offsetHeight } = this.$el as HTMLElement
-        if (tag) {
-          this.isFixed =
-            !this.hideScrollUp && this.isFixed
-              ? qs(tag).scrollTop > threshold
-              : window.pageYOffset > this.lastScrollTop &&
-                window.pageYOffset > offsetHeight
+        if (!hideScrollUp) {
+          if (tag && this.isFixed !== qs(tag).scrollTop > threshold) {
+            this.isFixed = qs(tag).scrollTop > threshold
+            this.$emit('change', this.isFixed)
+            this.$forceUpdate()
+          }
+        } else {
+          this.isFixed = this.isFixed ? qs(tag).scrollTop > threshold : (window.pageYOffset > this.lastScrollTop && window.pageYOffset > offsetHeight)
           this.$emit('change', this.isFixed)
           this.$forceUpdate()
           this.lastScrollTop = window.pageYOffset

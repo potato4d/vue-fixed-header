@@ -53,8 +53,8 @@ The threshold value for determining the scroll state.
 
 ```html
 <template>
-  <fixed-header :fixed.sync="isFixed" :threshold="100">
-    <div :class="{ 'is-fixed': isFixed }">
+  <fixed-header :threshold="100">
+    <div class="navbar">
       Your Content
     </div>
   </fixed-header>
@@ -66,14 +66,18 @@ import FixedHeader from 'vue-fixed-header'
 export default {
   components: {
     FixedHeader
-  },
-  data () {
-    return {
-      isFixed: false
-    }
   }
 }
 </script>
+
+<style>
+.navbar.vue-fixed-header--isFixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+}
+</style>
 ```
 
 ### headerClass

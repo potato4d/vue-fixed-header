@@ -30,7 +30,7 @@ export default {
 }
 
 .custom-root .page {
-  max-width: 900px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 2rem 2.5rem;
 }

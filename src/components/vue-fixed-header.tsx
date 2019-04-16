@@ -45,7 +45,6 @@ export default Vue.extend({
 
   methods: {
     getScrollTop() {
-      // // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
       return window.pageYOffset || document.documentElement.scrollTop
     },
     main() {

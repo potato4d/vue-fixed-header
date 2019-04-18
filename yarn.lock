@@ -2782,10 +2782,10 @@ algoliasearch@^3.24.5:
     semver "^5.1.0"
     tunnel-agent "^0.6.0"
 
-all-contributors-cli@6.3.0:
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/all-contributors-cli/-/all-contributors-cli-6.3.0.tgz#31e395aecc4c27bf5d482ce8ce99504a36d1e0db"
-  integrity sha512-9RVNwQbZya2Hsak78Qd5SmcLTd10E1zoDfW3d8A/hMkOu0CM7CoiHdm0KUiNhdR/CbC0bsFEhOl9CzpoQP1q1A==
+all-contributors-cli@6.3.1:
+  version "6.3.1"
+  resolved "https://registry.yarnpkg.com/all-contributors-cli/-/all-contributors-cli-6.3.1.tgz#0dd12d026f31827035da924e0fe752cec7ed0e3f"
+  integrity sha512-v0M4HqSMPyoaBZptqd91GUkjUN7IaOBhBLkGVEbuNF/j+PIMN6hnTlI/8rj6P/Ofc6Y4qNtmjktqPmwqajk6DA==
   dependencies:
     "@babel/runtime" "^7.2.0"
     async "^2.0.0-rc.1"

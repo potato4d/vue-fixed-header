@@ -53,7 +53,6 @@ export default Vue.extend({
         const { threshold, hideScrollUp } = this
         let currentScrollPos = this.getScrollTop()
         this.isFixed = (currentScrollPos >= this.lastScrollTop) ? currentScrollPos > threshold : !hideScrollUp
-
         this.lastScrollTop = currentScrollPos;
         this.$emit('change', this.isFixed)
         this.$forceUpdate()

@@ -1875,10 +1875,10 @@
     jest-watch-typeahead "0.2.1"
     vue-jest "^3.0.4"
 
-"@vue/cli-service@3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@vue/cli-service/-/cli-service-3.9.2.tgz#59c95500f1f20ab1cd1905c28f6c3b17c04d6de8"
-  integrity sha512-R4L9tCMpJ4DzLgu/aU9CEtl5QYsj/FXRrtEgXSKm+71OVtA/o2rkLTC8SLB2Bu7wHP/HCYbaoy4NZqSEQzTuLw==
+"@vue/cli-service@3.9.3":
+  version "3.9.3"
+  resolved "https://registry.yarnpkg.com/@vue/cli-service/-/cli-service-3.9.3.tgz#4bd5786465afb8b608c5c7fc9661390e747ea756"
+  integrity sha512-CZE9PP4HH9bK4qAaLbTUB3tubggI+aRSbgB/QYSZrVlhtMpuVFZPj2QHbIvJQZTI2cG6LFQtLTZWXKeqo5lbAQ==
   dependencies:
     "@intervolga/optimize-cssnano-plugin" "^1.0.5"
     "@soda/friendly-errors-webpack-plugin" "^1.7.1"
@@ -1913,7 +1913,7 @@
     hash-sum "^1.0.2"
     html-webpack-plugin "^3.2.0"
     launch-editor-middleware "^2.2.1"
-    lodash.defaultsdeep "^4.6.0"
+    lodash.defaultsdeep "^4.6.1"
     lodash.mapvalues "^4.6.0"
     lodash.transform "^4.6.0"
     mini-css-extract-plugin "^0.6.0"
@@ -1955,20 +1955,20 @@
     semver "^6.0.0"
     string.prototype.padstart "^3.0.0"
 
-"@vue/cli-ui-addon-webpack@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@vue/cli-ui-addon-webpack/-/cli-ui-addon-webpack-3.9.2.tgz#bc61c7a2afffdaae4abd9995c20970ad6ff9ed7b"
-  integrity sha512-YMeERzmWjrXd3JgH3ybDs5YOBDGJnTQ5+vz1/zeuYt5PAek63Zw+37Zu1qf6Z13gJZTSInD1XVo/MhAREI+9/Q==
+"@vue/cli-ui-addon-webpack@^3.9.3":
+  version "3.9.3"
+  resolved "https://registry.yarnpkg.com/@vue/cli-ui-addon-webpack/-/cli-ui-addon-webpack-3.9.3.tgz#6124fc2bd0494dae8ca98deca82122d5a170b4fb"
+  integrity sha512-BQro2UwHx7w1DcM2MJoF7qfa/Pp48mZWLwqJjCJVqg1utFkAqwjlIM9VweYWEWO7/jJ5B4JfuKCzRrGTtGDbdw==
 
-"@vue/cli-ui-addon-widgets@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@vue/cli-ui-addon-widgets/-/cli-ui-addon-widgets-3.9.2.tgz#396d89c82c9ba95efcfbae9cea5d76a67736d558"
-  integrity sha512-nehd1JqV/1mLrMLv+7wGZj+Lj2/q1lVOVGF12skcfknkwLRDfBN4BQyegvgmNRlxVYyt8Q13Ni8TsE8UibrUnA==
+"@vue/cli-ui-addon-widgets@^3.9.3":
+  version "3.9.3"
+  resolved "https://registry.yarnpkg.com/@vue/cli-ui-addon-widgets/-/cli-ui-addon-widgets-3.9.3.tgz#199b77a720272e1f7676a2b797ffc0b7c0ef0c10"
+  integrity sha512-DnIvWNbhilouNyaevH2aBKSzdUK1zhveQvGp3z9ddVNgD6MadY9qf0YIrGrtzK4gn2Jc42BpOh64Slzwq9KhcQ==
 
-"@vue/cli-ui@^3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@vue/cli-ui/-/cli-ui-3.9.2.tgz#c45dcc58132f7030027db32bfc27e0465bd8a67a"
-  integrity sha512-jEDd+QnY8xcRflJcHjbHAPmeC8uvxHip+RRlBvvLRzLJy04Wka7r6LPO5JMD/BwTgh8NS/DUYxYCNaO35ghdCA==
+"@vue/cli-ui@^3.9.3":
+  version "3.9.3"
+  resolved "https://registry.yarnpkg.com/@vue/cli-ui/-/cli-ui-3.9.3.tgz#30ea67b26a6e3d3257ec83cf70342e773d84a77b"
+  integrity sha512-CDMQn1An4OlaLoB0paZfXBSvuUUkR3BPU/EWTLszP1lHqTecAkj7ESIdelXfpPwRhxchE/7c9s9XXEhpHublrQ==
   dependencies:
     "@akryum/winattr" "^3.0.0"
     "@vue/cli-shared-utils" "^3.9.0"
@@ -2002,15 +2002,15 @@
     vue-cli-plugin-apollo "^0.20.0"
     watch "^1.0.2"
 
-"@vue/cli@3.9.2":
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/@vue/cli/-/cli-3.9.2.tgz#62834ff6dc38ecfa92bb109070caeac5c01196b0"
-  integrity sha512-JKDt7plf3FOCK6X4OpK6ZETFFFw0AkrnmPqwyyi1Jc/irFz6eNVRBlodXk8rikQuY5MKbi+6hVOXitHPXbZc+w==
+"@vue/cli@3.9.3":
+  version "3.9.3"
+  resolved "https://registry.yarnpkg.com/@vue/cli/-/cli-3.9.3.tgz#b9c23c67ffaa2ae11dd89a95853506255f7584e2"
+  integrity sha512-+l/N5sNSwvDe6UsVrqcz8GIWp8QO5Q72OUW7P0X3xdcVo0XPnzwJ/jzKaYGnp7/syOFTIfL6KyW4gVezPE2oPA==
   dependencies:
     "@vue/cli-shared-utils" "^3.9.0"
-    "@vue/cli-ui" "^3.9.2"
-    "@vue/cli-ui-addon-webpack" "^3.9.2"
-    "@vue/cli-ui-addon-widgets" "^3.9.2"
+    "@vue/cli-ui" "^3.9.3"
+    "@vue/cli-ui-addon-webpack" "^3.9.3"
+    "@vue/cli-ui-addon-widgets" "^3.9.3"
     chalk "^2.4.1"
     cmd-shim "^2.0.2"
     commander "^2.20.0"
@@ -9626,10 +9626,10 @@ lodash.clonedeep@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
   integrity sha1-4j8/nE+Pvd6HJSnBBxhXoIblzO8=
 
-lodash.defaultsdeep@^4.6.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/lodash.defaultsdeep/-/lodash.defaultsdeep-4.6.0.tgz#bec1024f85b1bd96cbea405b23c14ad6443a6f81"
-  integrity sha1-vsECT4WxvZbL6kBbI8FK1kQ6b4E=
+lodash.defaultsdeep@^4.6.1:
+  version "4.6.1"
+  resolved "https://registry.yarnpkg.com/lodash.defaultsdeep/-/lodash.defaultsdeep-4.6.1.tgz#512e9bd721d272d94e3d3a63653fa17516741ca6"
+  integrity sha512-3j8wdDzYuWO3lM3Reg03MuQR957t287Rpcxp1njpEa8oDrikb+FwGdW3n+FELh/A6qib6yPit0j/pv9G/yeAqA==
 
 lodash.ismatch@^4.4.0:
   version "4.4.0"

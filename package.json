@@ -47,7 +47,7 @@
     "bulma": "0.7.5",
     "codecov": "3.5.0",
     "element-ui": "2.11.1",
-    "gh-pages": "2.0.1",
+    "gh-pages": "2.1.0",
     "jest": "24.8.0",
     "jsdom": "15.1.1",
     "jsdom-global": "3.0.2",

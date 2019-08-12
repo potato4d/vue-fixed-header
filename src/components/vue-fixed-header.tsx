@@ -1,10 +1,7 @@
 import Vue, { CreateElement, VNode } from 'vue'
-import { getTargetTag } from '../utils/getTargetTag'
 
 type LocalData = {
-  qs: any
   check: any
-  tag: any
   isFixed: boolean
   lastScrollTop: Number
 }
@@ -34,7 +31,7 @@ export default Vue.extend({
   },
 
   data(): LocalData {
-    return { qs: null, check: null, tag: null, isFixed: false, lastScrollTop: 0 }
+    return { check: null, isFixed: false, lastScrollTop: 0 }
   },
 
   mounted() {
@@ -47,24 +44,18 @@ export default Vue.extend({
   },
 
   methods: {
+    getScrollTop() {
+      return window.pageYOffset || document.documentElement.scrollTop
+    },
     main() {
-      this.qs = (e: string) => document.querySelector(e)
-      this.tag = getTargetTag(navigator.userAgent)
+      this.lastScrollTop = this.getScrollTop()
       this.check = () => {
-        const { tag, qs, threshold, hideScrollUp } = this
-        const { offsetHeight } = this.$el as HTMLElement
-        if (!hideScrollUp) {
-          if (tag && this.isFixed !== qs(tag).scrollTop > threshold) {
-            this.isFixed = qs(tag).scrollTop > threshold
-            this.$emit('change', this.isFixed)
-            this.$forceUpdate()
-          }
-        } else {
-          this.isFixed = this.isFixed ? qs(tag).scrollTop > threshold : (window.pageYOffset > this.lastScrollTop && window.pageYOffset > offsetHeight)
-          this.$emit('change', this.isFixed)
-          this.$forceUpdate()
-          this.lastScrollTop = window.pageYOffset
-        }
+        const { threshold, hideScrollUp } = this
+        let currentScrollPos = this.getScrollTop()
+        this.isFixed = (currentScrollPos >= this.lastScrollTop) ? currentScrollPos > threshold : !hideScrollUp
+        this.lastScrollTop = currentScrollPos;
+        this.$emit('change', this.isFixed)
+        this.$forceUpdate()
       }
     },
     registerEvent() {

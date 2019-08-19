@@ -34,7 +34,7 @@
     "email": "mail@potato4d.me"
   },
   "devDependencies": {
-    "@types/jest": "24.0.17",
+    "@types/jest": "24.0.18",
     "@types/node": "10.14.15",
     "@vue/cli": "3.10.0",
     "@vue/cli-plugin-babel": "3.10.0",

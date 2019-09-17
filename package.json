@@ -57,7 +57,7 @@
     "ts-jest": "24.1.0",
     "typescript": "3.6.2",
     "vue-template-compiler": "2.6.7",
-    "vuepress": "1.0.4"
+    "vuepress": "1.1.0"
   },
   "dependencies": {
     "vue": "^2.5.17"

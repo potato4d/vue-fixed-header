@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/app
     docker:
-      - image: circleci/node:10.16.3
+      - image: circleci/node:10.17.0
     steps:
       - checkout
 
@@ -25,7 +25,7 @@ jobs:
   deploy:
     working_directory: ~/app
     docker:
-      - image: circleci/node:10.16.3
+      - image: circleci/node:10.17.0
     steps:
       - checkout
       - run: cd docs;yarn;yarn build

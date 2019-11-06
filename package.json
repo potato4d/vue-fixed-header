@@ -13,7 +13,7 @@
     "url": "potato4d/vue-fixed-header",
     "type": "git"
   },
-  "main": "dist/vue-fixed-header.common.js",
+  "main": "dist/index.js",
   "files": [
     "dist"
   ],
@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@types/jest": "24.0.21",
-    "@types/node": "10.17.3",
+    "@types/node": "^12.12.6",
     "@vue/cli": "3.12.1",
     "@vue/cli-plugin-babel": "3.12.1",
     "@vue/cli-plugin-typescript": "3.12.1",
@@ -55,7 +55,8 @@
     "prettier": "1.18.2",
     "standard-version": "7.0.0",
     "ts-jest": "24.1.0",
-    "typescript": "3.6.4",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.2",
     "vue-template-compiler": "2.6.7",
     "vuepress": "1.2.0"
   },

@@ -6,6 +6,7 @@
     "allowJs": true,
     "jsx": "preserve",
     "importHelpers": true,
+    "declaration": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
     "noImplicitThis": true,

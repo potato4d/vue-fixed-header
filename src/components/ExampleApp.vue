@@ -15,9 +15,12 @@
         </el-menu>
       </nav>
     </VueFixedHeader>
-    <div class="container" :class="{
-      headerIsFixed: fixedStatus.headerIsFixed
-    }">
+    <div
+      class="container"
+      :class="{
+        headerIsFixed: fixedStatus.headerIsFixed
+      }"
+    >
       <el-card>
         <h3 class="heading">
           vue-fixed-header debugging

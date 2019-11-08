@@ -1,5 +1,5 @@
 {
   "extends": [
-    "@elevenback/renovate-config"
+    "@elevenback:renovate-config"
   ]
 }

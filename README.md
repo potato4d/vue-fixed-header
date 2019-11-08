@@ -2,7 +2,7 @@
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![donate: Patreon](https://img.shields.io/badge/donate-patreon-orange.svg?style=flat-square)](https://www.patreon.com/potato4d)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licences/MIT)
 [![NPM version](https://img.shields.io/npm/v/vue-fixed-header.svg?style=flat-square)](https://npmjs.com/package/vue-fixed-header)
 [![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors)
 [![NPM downloads](https://img.shields.io/npm/dm/vue-fixed-header.svg?style=flat-square)](https://npmjs.com/package/vue-fixed-header)

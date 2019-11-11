@@ -1,6 +1,6 @@
 {
   "name": "vue-fixed-header",
-  "version": "3.2.8",
+  "version": "3.2.9",
   "description": "Simple and cross-browser friendly fixed header component for Vue.js.",
   "licence": "MIT",
   "keywords": [

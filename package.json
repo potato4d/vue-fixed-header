@@ -56,12 +56,12 @@
     "renovate": "19.66.5",
     "standard-version": "7.0.0",
     "ts-jest": "24.1.0",
-    "tslib": "1.10.0",
     "typescript": "3.7.2",
     "vue-template-compiler": "2.6.7",
     "vuepress": "1.2.0"
   },
   "dependencies": {
+    "tslib": "1.10.0",
     "vue": "^2.5.17"
   },
   "prettier": {

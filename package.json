@@ -20,7 +20,7 @@
   "scripts": {
     "dev": "yarn serve",
     "serve": "vue-cli-service serve ./src/example.ts",
-    "build": "vue-cli-service build --target lib src/components/vue-fixed-header.tsx",
+    "build": "tsc --build tsconfig.build.json",
     "format": "npm-run-all -p format:*",
     "format:src": "prettier './src/**/*.{js,ts,tsx,vue}' --write",
     "format:docs": "prettier './docs/.vuepress/**/*.{js,vue}' --write",

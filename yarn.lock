@@ -2962,17 +2962,17 @@
     vue-jscodeshift-adapter "^2.0.2"
     yaml-front-matter "^3.4.1"
 
-"@vue/component-compiler-utils@3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@vue/component-compiler-utils/-/component-compiler-utils-3.0.1.tgz#2d3a2e1b2b217d1163dfb4081d9762169925aa08"
-  integrity sha512-jl3yELdFGyeHEplXB/9pnk9O7G9EA629y5ZQXdHLrFFV9XaYQsaS5qgZ1FqwYugaUtzQMcre7/noSFjRw/PfiA==
+"@vue/component-compiler-utils@3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@vue/component-compiler-utils/-/component-compiler-utils-3.1.1.tgz#d4ef8f80292674044ad6211e336a302e4d2a6575"
+  integrity sha512-+lN3nsfJJDGMNz7fCpcoYIORrXo0K3OTsdr8jCM7FuqdI4+70TY6gxY6viJ2Xi1clqyPg7LpeOWwjF31vSMmUw==
   dependencies:
     consolidate "^0.15.1"
     hash-sum "^1.0.2"
     lru-cache "^4.1.2"
     merge-source-map "^1.1.0"
     postcss "^7.0.14"
-    postcss-selector-parser "^5.0.0"
+    postcss-selector-parser "^6.0.2"
     prettier "^1.18.2"
     source-map "~0.6.1"
     vue-template-es2015-compiler "^1.9.0"

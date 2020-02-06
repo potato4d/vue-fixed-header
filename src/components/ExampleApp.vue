@@ -2,7 +2,7 @@
   <div id="app">
     <VueFixedHeader
       @change="updateFixedStatus"
-      :threshold="propsData.threshold"
+      :threshold="Number(propsData.threshold)"
       :headerClass="propsData.headerClass"
       :fixedClass="propsData.fixedClass"
       :hideScrollUp="propsData.hideScrollUp"

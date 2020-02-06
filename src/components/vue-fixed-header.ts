@@ -49,16 +49,26 @@ export default Vue.extend({
     },
     main() {
       this.lastScrollTop = this.getScrollTop()
+
       this.check = () => {
         const { threshold, hideScrollUp } = this
-        let currentScrollPos = this.getScrollTop()
-        this.isFixed =
-          currentScrollPos >= this.lastScrollTop
-            ? currentScrollPos > threshold
-            : !hideScrollUp
+        const currentScrollPos = this.getScrollTop()
+
+        const isOverThreshold : boolean = currentScrollPos > threshold
+        const isScrollDown : boolean = currentScrollPos >= this.lastScrollTop
+
+        const newIsFixed : boolean = isScrollDown
+          // down-scrolled - are we over threshold ?
+          ? isOverThreshold
+          // up-scrolled - EITHER we don't care OR are we over threshold ?
+          : (hideScrollUp ? false : isOverThreshold)
+
         this.lastScrollTop = currentScrollPos
-        this.$emit('change', this.isFixed)
-        this.$forceUpdate()
+
+        if (this.isFixed !== newIsFixed) {
+          this.isFixed = newIsFixed
+          this.$emit('change', this.isFixed)
+        }
       }
     },
     registerEvent() {

@@ -67,7 +67,17 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "birdspider",
+      "name": "Patrik",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/370960?v=4",
+      "profile": "https://github.com/birdspider",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
-  "contributorsPerLine": 7
+  "contributorsPerLine": 7,
+  "skipCi": true
 }

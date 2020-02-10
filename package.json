@@ -45,7 +45,7 @@
     "@vue/test-utils": "1.0.0-beta.29",
     "all-contributors-cli": "6.13.0",
     "bulma": "0.8.0",
-    "codecov": "3.6.4",
+    "codecov": "3.6.5",
     "element-ui": "2.13.0",
     "gh-pages": "2.2.0",
     "jest": "24.9.0",

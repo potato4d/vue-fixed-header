@@ -60,7 +60,7 @@ export default {
 ### Attach classes
 
 The Vue Fixed Header always assigns the `vue-fixed-header` CSS class to the slot's root element.
-Also, when matching the fixed condition, we give the `vue-fixed-header - isFixed` CSS class.
+Also, when matching the fixed condition, we give the `vue-fixed-header--isFixed` CSS class.
 These can also be changed with headerClass prop and fixedClass prop.
 
 ## Props

@@ -36,13 +36,13 @@
   "devDependencies": {
     "@types/jest": "24.9.1",
     "@types/node": "12.12.50",
-    "@vue/cli": "4.0.5",
-    "@vue/cli-plugin-babel": "4.0.5",
-    "@vue/cli-plugin-typescript": "4.0.5",
-    "@vue/cli-plugin-unit-jest": "4.0.5",
-    "@vue/cli-service": "4.0.5",
+    "@vue/cli": "4.5.6",
+    "@vue/cli-plugin-babel": "4.5.6",
+    "@vue/cli-plugin-typescript": "4.5.6",
+    "@vue/cli-plugin-unit-jest": "4.5.6",
+    "@vue/cli-service": "4.5.6",
     "@vue/component-compiler-utils": "3.1.2",
-    "@vue/test-utils": "1.0.0-beta.29",
+    "@vue/test-utils": "1.1.0",
     "all-contributors-cli": "6.16.1",
     "bulma": "0.9.0",
     "codecov": "3.7.1",
@@ -57,7 +57,7 @@
     "standard-version": "8.0.2",
     "ts-jest": "24.3.0",
     "typescript": "3.9.6",
-    "vue-template-compiler": "2.6.7",
+    "vue-template-compiler": "2.6.12",
     "vuepress": "1.5.2"
   },
   "dependencies": {

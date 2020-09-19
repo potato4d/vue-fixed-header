@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.2.15](https://github.com/potato4d/vue-fixed-header/compare/v3.2.14...v3.2.15) (2020-09-19)
+
 ### [3.2.14](https://github.com/potato4d/vue-fixed-header/compare/v3.2.13...v3.2.14) (2020-02-06)
 
 ### [3.2.13](https://github.com/potato4d/vue-fixed-header/compare/v3.2.12...v3.2.13) (2019-12-06)

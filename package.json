@@ -61,7 +61,7 @@
     "vuepress": "1.7.1"
   },
   "dependencies": {
-    "tslib": "1.14.1",
+    "tslib": "2.0.3",
     "vue": "^2.5.17"
   },
   "prettier": {

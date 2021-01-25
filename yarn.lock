@@ -3249,10 +3249,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.0.19.tgz#994d99708822bca643a2364f8aeed04a16e0f5a1"
   integrity sha512-yf3BP/NIXF37BjrK5klu//asUWitOEoUP5xE1mhSUjazotwJ/eJDgEmMQNlOeWOVv72j24QQ+3bqXHE++CFGag==
 
-"@types/node@12.19.14":
-  version "12.19.14"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.19.14.tgz#59e5029a3c2aea34f68b717955381692fd47cafb"
-  integrity sha512-2U9uLN46+7dv9PiS8VQJcHhuoOjiDPZOLAt0WuA1EanEknIMae+2QbMhayF7cgGqjvRVIfNpt+6jLPczJZFiRw==
+"@types/node@12.19.15":
+  version "12.19.15"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.19.15.tgz#0de7e978fb43db62da369db18ea088a63673c182"
+  integrity sha512-lowukE3GUI+VSYSu6VcBXl14d61Rp5hA1D+61r16qnwC0lYNSqdxcvRh0pswejorHfS+HgwBasM8jLXz0/aOsw==
 
 "@types/node@>=6":
   version "12.12.6"
@@ -17140,10 +17140,10 @@ renderkid@^2.0.1:
     strip-ansi "^3.0.0"
     utila "^0.4.0"
 
-renovate@24.27.1:
-  version "24.27.1"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-24.27.1.tgz#5d2674cb4419a6803bb6903b73f5de4b153cba8b"
-  integrity sha512-4BLSRlSDkm86MDt9csVD121c4deRTuLBnFxQWCmB9krBFDyWRKX/nFpd+cXPmrHFn+QlJ+gtT5j1s+ulofMneQ==
+renovate@24.27.4:
+  version "24.27.4"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-24.27.4.tgz#ce1e6ec961176a72c719e34476d25cd5cdee42e6"
+  integrity sha512-w2LJfGDM8JY8sXFeImFuy0cx4Y30r3XoLAlxvtMk0R0yCQSzBw6SU2IYOeC7TvN8wL2e19QrGmkWz248IU0GZA==
   dependencies:
     "@breejs/later" "4.0.2"
     "@iarna/toml" "2.2.5"

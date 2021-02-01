@@ -6239,10 +6239,10 @@ builtins@^1.0.3:
   resolved "https://registry.yarnpkg.com/builtins/-/builtins-1.0.3.tgz#cb94faeb61c8696451db36534e1422f94f0aee88"
   integrity sha1-y5T662HIaWRR2zZTThQi+U8K7og=
 
-bulma@0.9.1:
-  version "0.9.1"
-  resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.9.1.tgz#2bf0e25062a22166db5c92e8c3dcb4605ab040d8"
-  integrity sha512-LSF69OumXg2HSKl2+rN0/OEXJy7WFEb681wtBlNS/ulJYR27J3rORHibdXZ6GVb/vyUzzYK/Arjyh56wjbFedA==
+bulma@0.9.2:
+  version "0.9.2"
+  resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.9.2.tgz#340011e119c605f19b8ca886bfea595f1deaf23c"
+  integrity sha512-e14EF+3VSZ488yL/lJH0tR8mFWiEQVCMi/BQUMi2TGMBOk+zrDg4wryuwm/+dRSHJw0gMawp2tsW7X1JYUCE3A==
 
 bunyan@1.8.15:
   version "1.8.15"
@@ -17150,10 +17150,10 @@ renderkid@^2.0.1:
     strip-ansi "^3.0.0"
     utila "^0.4.0"
 
-renovate@24.29.0:
-  version "24.29.0"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-24.29.0.tgz#11db77650c1d7895de3646cc214b23c711383099"
-  integrity sha512-4S/1TpREL+tbBYSkufIOSpZrm26DL8xR05JNZ+fms+01IdBFvGCRwXXxjKkhG3Me0H+mvs8cyUEdRxP3aRFqoA==
+renovate@24.29.4:
+  version "24.29.4"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-24.29.4.tgz#9968e1e51c478b133de81000d9a4a6b43c5d2e22"
+  integrity sha512-+qbGu8f9h0VfBthurn27V97JK3BOgqlRb8GfqtYjdIex+I80UtOOz51FM7r7jA2SAPkZSELcBnPNJSkZzN/08A==
   dependencies:
     "@breejs/later" "4.0.2"
     "@iarna/toml" "2.2.5"

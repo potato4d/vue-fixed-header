@@ -17150,10 +17150,10 @@ renderkid@^2.0.1:
     strip-ansi "^3.0.0"
     utila "^0.4.0"
 
-renovate@24.29.4:
-  version "24.29.4"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-24.29.4.tgz#9968e1e51c478b133de81000d9a4a6b43c5d2e22"
-  integrity sha512-+qbGu8f9h0VfBthurn27V97JK3BOgqlRb8GfqtYjdIex+I80UtOOz51FM7r7jA2SAPkZSELcBnPNJSkZzN/08A==
+renovate@24.35.1:
+  version "24.35.1"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-24.35.1.tgz#239931d419dd200ef2858b4398e2104ed873b11b"
+  integrity sha512-XeXxhJoBuJ7ls7j2p2WX1vnKwc6B2llyg16FcZ96WjCAdK1D1aPb8pjzM0baB27OUi21PbLigRNIjsvMcacyJA==
   dependencies:
     "@breejs/later" "4.0.2"
     "@iarna/toml" "2.2.5"
@@ -19422,10 +19422,10 @@ ts-invariant@^0.4.0:
   dependencies:
     tslib "^1.9.3"
 
-ts-jest@26.4.4:
-  version "26.4.4"
-  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-26.4.4.tgz#61f13fb21ab400853c532270e52cc0ed7e502c49"
-  integrity sha512-3lFWKbLxJm34QxyVNNCgXX1u4o/RV0myvA2y2Bxm46iGIjKlaY0own9gIckbjZJPn+WaJEnfPPJ20HHGpoq4yg==
+ts-jest@26.5.0:
+  version "26.5.0"
+  resolved "https://registry.yarnpkg.com/ts-jest/-/ts-jest-26.5.0.tgz#3e3417d91bc40178a6716d7dacc5b0505835aa21"
+  integrity sha512-Ya4IQgvIFNa2Mgq52KaO8yBw2W8tWp61Ecl66VjF0f5JaV8u50nGoptHVILOPGoI7SDnShmEqnYQEmyHdQ+56g==
   dependencies:
     "@types/jest" "26.x"
     bs-logger "0.x"
@@ -19433,7 +19433,7 @@ ts-jest@26.4.4:
     fast-json-stable-stringify "2.x"
     jest-util "^26.1.0"
     json5 "2.x"
-    lodash.memoize "4.x"
+    lodash "4.x"
     make-error "1.x"
     mkdirp "1.x"
     semver "7.x"

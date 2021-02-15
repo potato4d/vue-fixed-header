@@ -55,8 +55,8 @@
     "prettier": "2.2.1",
     "renovate": "24.35.3",
     "standard-version": "9.1.0",
-    "ts-jest": "26.5.0",
-    "typescript": "4.1.3",
+    "ts-jest": "26.5.1",
+    "typescript": "4.1.5",
     "vue-template-compiler": "2.6.7",
     "vuepress": "1.7.1"
   },

@@ -53,7 +53,7 @@
     "jsdom-global": "3.0.2",
     "npm-run-all": "4.1.5",
     "prettier": "2.2.1",
-    "renovate": "24.64.1",
+    "renovate": "24.68.1",
     "standard-version": "9.1.1",
     "ts-jest": "26.5.2",
     "typescript": "4.2.2",

@@ -17646,10 +17646,10 @@ renderkid@^2.0.1:
     strip-ansi "^3.0.0"
     utila "^0.4.0"
 
-renovate@24.64.1:
-  version "24.64.1"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-24.64.1.tgz#e0fb02ec2f2c212fbfa2fba257a1eb99f4b3e4d6"
-  integrity sha512-A6c1LUUGQXMKEXmuYnhUrFxly+KLdkaOcJnjZ7Wo3y2ayJeI+lhNSz+SulZRiw7z3Q2UMA+t1dHI+P5IWiPAIA==
+renovate@24.68.1:
+  version "24.68.1"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-24.68.1.tgz#f09992062fd8fa2ecc6d7b12d366ebdfdc2d37a4"
+  integrity sha512-/m/RQeKP7RdCjGd6Vn9cjpPxWORS627mrqvgDSbikrDSMB0Onh2OqCHHlxjMsc2Q/PZudcm4dC+GmMQ6MW2qKA==
   dependencies:
     "@aws-sdk/client-ecr" "3.5.0"
     "@breejs/later" "4.0.2"
@@ -17710,7 +17710,7 @@ renovate@24.64.1:
     shlex "2.0.2"
     shortid "2.2.16"
     simple-git "2.34.2"
-    slugify "1.4.6"
+    slugify "1.4.7"
     traverse "0.6.6"
     upath "2.0.1"
     url-join "4.0.1"
@@ -18544,10 +18544,10 @@ slice-ansi@^2.1.0:
     astral-regex "^1.0.0"
     is-fullwidth-code-point "^2.0.0"
 
-slugify@1.4.6:
-  version "1.4.6"
-  resolved "https://registry.yarnpkg.com/slugify/-/slugify-1.4.6.tgz#ef288d920a47fb01c2be56b3487b6722f5e34ace"
-  integrity sha512-ZdJIgv9gdrYwhXqxsH9pv7nXxjUEyQ6nqhngRxoAAOlmMGA28FDq5O4/5US4G2/Nod7d1ovNcgURQJ7kHq50KQ==
+slugify@1.4.7:
+  version "1.4.7"
+  resolved "https://registry.yarnpkg.com/slugify/-/slugify-1.4.7.tgz#e42359d505afd84a44513280868e31202a79a628"
+  integrity sha512-tf+h5W1IrjNm/9rKKj0JU2MDMruiopx0jjVA5zCdBtcGjfp0+c5rHw/zADLC3IeKlGHtVbHtpfzvYA0OYT+HKg==
 
 smoothscroll-polyfill@^0.4.3:
   version "0.4.4"

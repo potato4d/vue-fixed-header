@@ -8,6 +8,6 @@
     "build": "vuepress build"
   },
   "devDependencies": {
-    "vuepress": "1.9.8"
+    "vuepress": "1.9.9"
   }
 }

@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@types/jest": "26.0.24",
-    "@types/node": "18.16.9",
+    "@types/node": "18.16.14",
     "@vue/cli": "5.0.8",
     "@vue/cli-plugin-babel": "5.0.8",
     "@vue/cli-plugin-typescript": "5.0.8",
@@ -61,7 +61,7 @@
     "vuepress": "1.9.9"
   },
   "dependencies": {
-    "tslib": "2.5.0",
+    "tslib": "2.5.2",
     "vue": "^2.6.7"
   },
   "prettier": {

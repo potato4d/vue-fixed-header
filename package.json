@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@types/jest": "26.0.24",
-    "@types/node": "18.17.5",
+    "@types/node": "18.17.6",
     "@vue/cli": "5.0.8",
     "@vue/cli-plugin-babel": "5.0.8",
     "@vue/cli-plugin-typescript": "5.0.8",
@@ -52,7 +52,7 @@
     "jsdom": "22.1.0",
     "jsdom-global": "3.0.2",
     "npm-run-all": "4.1.5",
-    "prettier": "3.0.1",
+    "prettier": "3.0.2",
     "renovate": "28.26.0",
     "standard-version": "9.5.0",
     "ts-jest": "26.5.6",
@@ -61,7 +61,7 @@
     "vuepress": "1.9.10"
   },
   "dependencies": {
-    "tslib": "2.6.1",
+    "tslib": "2.6.2",
     "vue": "^2.6.7"
   },
   "prettier": {

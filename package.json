@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@types/jest": "26.0.24",
-    "@types/node": "18.17.6",
+    "@types/node": "18.17.12",
     "@vue/cli": "5.0.8",
     "@vue/cli-plugin-babel": "5.0.8",
     "@vue/cli-plugin-typescript": "5.0.8",
@@ -46,7 +46,7 @@
     "all-contributors-cli": "6.26.1",
     "bulma": "0.9.4",
     "codecov": "3.8.3",
-    "element-ui": "2.15.13",
+    "element-ui": "2.15.14",
     "gh-pages": "6.0.0",
     "jest": "26.6.3",
     "jsdom": "22.1.0",

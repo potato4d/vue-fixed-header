@@ -52,7 +52,7 @@
     "jsdom": "22.1.0",
     "jsdom-global": "3.0.2",
     "npm-run-all2": "5.0.2",
-    "prettier": "3.3.2",
+    "prettier": "3.3.3",
     "renovate": "28.26.0",
     "standard-version": "9.5.0",
     "ts-jest": "26.5.6",

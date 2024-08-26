@@ -61,7 +61,7 @@
     "vuepress": "1.9.10"
   },
   "dependencies": {
-    "tslib": "2.6.3",
+    "tslib": "2.7.0",
     "vue": "^2.6.7"
   },
   "prettier": {

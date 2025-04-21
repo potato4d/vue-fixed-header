@@ -51,7 +51,7 @@
     "jest": "26.6.3",
     "jsdom": "22.1.0",
     "jsdom-global": "3.0.2",
-    "npm-run-all2": "5.0.2",
+    "npm-run-all2": "7.0.2",
     "prettier": "3.4.2",
     "renovate": "28.26.0",
     "standard-version": "9.5.0",
